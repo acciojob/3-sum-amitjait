@@ -4,7 +4,7 @@ function threeSum(arr, target) {
 
 	let sum = 1000000000;
 
-	for(let i=0; i<arr.length; i++){
+	for(let i=0; i<arr.length-2; i++){
 		let p1 = i+1; let p2 = arr.length-1;
 
 		while(p1 < p2){
