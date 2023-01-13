@@ -9,9 +9,11 @@ function threeSum(arr, target) {
 
 		while(p1 < p2){
 			let currSum = arr[i]+arr[p1]+arr[p2];
-
-			if(Math.abs(target - sum) < Math.abs(target - currSum)){
+            // console.log(Math.abs(target - sum), Math.abs(target - currSum))
+            // console.log(sum, currSum);
+			if(Math.abs(target - sum) >= Math.abs(target - currSum)){
 				sum = currSum;
+                // console.log("IN");
 			}
 
 			if(currSum > target){
