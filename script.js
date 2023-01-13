@@ -10,7 +10,7 @@ function threeSum(arr, target) {
 		while(p1 < p2){
 			let currSum = arr[i]+arr[p1]+arr[p2];
 
-			if(target - sum < target - currSum){
+			if(Math.abs(target - sum) < Math.abs(target - currSum)){
 				sum = currSum;
 			}
 
